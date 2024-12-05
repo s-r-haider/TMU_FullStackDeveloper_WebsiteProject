@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeHub One Year Anniversary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+         <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#ordering">Anniversary Product Ordering</a></li>
+                <li><a href="#store">Store & Hours</a></li>
+                <li><a href="#corporate">Corporate Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Welcome to AnimeHub</h2>
+        <p>AnimeHub is a young organization competing with industry giants. Celebrate our one-year anniversary with exciting offers!</p>
+        <div class="video-container">
+            <video autoplay muted loop>
+                    <source src="{{ url_for('static', filename='videos/celebration.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Anniversary Product Ordering Section -->
+    <section id="ordering">
+        <h2>One Year Anniversary Product Ordering</h2>
+        <div class="packages">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anniversary Comic Book</td>
+                        <td>$400 GYD</td>
+                    </tr>
+                    <tr>
+                        <td>Comic Book Package</td>
+                        <td>$800 GYD</td>
+                    </tr>
+                    <tr>
+                        <td>Anniversary Anime Package</td>
+                        <td>$1500 GYD</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Package</td>
+                        <td>$3000 GYD</td>
+                    </tr>
+                    <tr>
+                        <td>Mystery Package</td>
+                        <td>$1000 GYD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form id="order-form">
+            <h3>Place Your Order</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="address" required>
+            <label for="package">Select Package</label>
+            <select id="package" name="package" required>
+                <option value="400">Anniversary Comic Book - $400 GYD</option>
+                <option value="800">Comic Book Package - $800 GYD</option>
+                <option value="1500">Anniversary Anime Package - $1500 GYD</option>
+                <option value="3000">Deluxe Package - $3000 GYD</option>
+                <option value="1000">Mystery Package - $1000 GYD</option>
+            </select>
+            <label for="shipping">Select Shipping</label>
+            <select id="shipping" name="shipping" required>
+                <option value="150">North America - $150 GYD</option>
+                <option value="200">Europe - $200 GYD</option>
+                <option value="100">Asia - $100 GYD</option>
+            </select>
+            <button type="button" id="add-to-cart">Add to Cart</button>
+            <button type="button" id="place-order">Place Order</button>
+        </form>
+        <h3>Your Cart</h3>
+        <ul id="cart"></ul>
+        <div id="message"></div>
+        <h3>Total:</h3>
+        <p id="total"></p>
+    </section>
+
+    <!-- Store & Hours Section -->
+    <section id="store">
+        <h2>Store & Hours of Operation</h2>
+        <p>Our store is open from Monday to Friday, 9 AM to 5 PM. Visit us to explore a wide range of anime and comic merchandise!</p>
+    </section>
+
+    <!-- Corporate Information Section -->
+    <section id="corporate">
+        <h2>Corporate Information</h2>
+        <p>AnimeHub is dedicated to bringing the best in anime and comic book entertainment. Contact us for partnerships and inquiries.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: contact@animehub.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Anime Street, Berbice, Guyana</p>
+        <div class="social-media">
+            <a href="" target="_blank" class="social-icon">
+                <img src="facebook_icon.png" alt="Facebook" title="Follow us on Facebook">
+            </a>
+            <a href="" target="_blank" class="social-icon">
+                <img src="instagram_icon.png" alt="Instagram" title="Follow us on Instagram">
+            </a>
+            <a href="" target="_blank" class="social-icon">
+                <img src="tiktok_icon.png" alt="TikTok" title="Follow us on TikTok">
+            </a>
+        </div>
+    </section>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AnimeHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

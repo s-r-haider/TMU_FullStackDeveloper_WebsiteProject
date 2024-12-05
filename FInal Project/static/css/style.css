@@ -1,0 +1,138 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+    background-color: #f5f5f5; /* Light gray background */
+    color: black; /* Text color */
+    padding: 20px 60px; /* Adjust padding for better proportions */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+        header .logo {
+            font-size: 80px;
+            font-weight: bold;
+        }
+		.logo {
+		    top: 0;
+            position: fixed;
+            left: 0px; /* Place logo on the left side */
+        }
+        .logo img {
+            height: 130px;
+            width: auto;
+        }
+		
+		.Celebrate {
+    text-align: center; /* Center align the image */
+    margin: 10px auto; /* Add space around the image */
+    max-width: 100%; /* Make the container responsive */
+}
+
+.Celebrate img {
+    max-width: 100%; /* Scale down for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Optional: Set a maximum height */
+}
+
+#message {
+    visibility: visible; /* Ensure it is visible */
+}
+
+
+   /* Navigation menu styling */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 15px; /* Add padding for button-like effect */
+    background-color: transparent; /* No background by default */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd; /* Light gray hover effect */
+    color: black;
+}
+        section {
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .packages table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .packages table th, .packages table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .packages table th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form select, form button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+.video-container {
+    text-align: center; /* Center the video */
+    margin-top: 20px; /* Add some space above the video */
+}
+
+/* Style for the video element */
+.video-container video {
+    width: 100%; /* Make the video take the full width of its container */
+    max-width: 800px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 40px; /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.social-icon img:hover {
+    transform: scale(1.2); /* Slight zoom-in on hover */
+}
